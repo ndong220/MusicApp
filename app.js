@@ -23,6 +23,48 @@ const app = {
     config: JSON.parse(localStorage.getItem('PLAYER_STORAGE_KEY')) || {},
     songs : [
         {
+            name: 'Oanh cười=))',
+            singer: 'Kiều Oanh',
+            path: './assets/songs/OanhCuoi.mp3',
+            image: './assets/img//oanh.JPG'
+        },
+        {
+            name: 'KHÔNG MUỐN MỘT MÌNH ',
+            singer: 'VICKY NHUNG',
+            path: './assets/songs/VICKY NHUNG - KHÔNG MUỐN MỘT MÌNH (CHILL VER.) (1).mp3',
+            image: './assets/img/khongmuonmotminh.jpg'
+        },
+        {
+            name: 'Người Em Từng Yêu ',
+            singer: 'Ngân Ngân',
+            path: './assets/songs/Người Em Từng Yêu - Ngân Ngân - Official Music Video 4k - Người Từng Làm Em Khóc....mp3',
+            image: './assets/img/nguoiemtungyeu.jpg'
+        },
+        {
+            name: 'EM LÀ KẺ ĐÁNG THƯƠNG',
+            singer: 'PHÁT HUY T4',
+            path: './assets/songs/EM LÀ KẺ ĐÁNG THƯƠNG - PHÁT HUY T4 -- OFFICIAL MV.mp3',
+            image: './assets/img/emlakedangthuong.jpg'
+        },
+        {
+            name: 'Thế hệ tan vỡ',
+            singer: 'Kaidinh x Sivan',
+            path: './assets/songs/Kaidinh x Sivan - Thế hệ tan vỡ - Official Lyric Video.mp3',
+            image: './assets/img/thehetanvo.jfif'
+        },
+        {
+            name: 'YÊU NHAU XONG RỒI',
+            singer: 'KUUN ĐỨC NAM',
+            path: './assets/songs/YÊU NHAU XONG RỒI - KUUN ĐỨC NAM - OFFICIAL MUSIC VIDEO - CHẲNG THỂ YÊU THÊM MỘT AI TỪ SAU NGÀY ẤY.mp3',
+            image: './assets/img/yeunhauxongroi.jpg'
+        },
+        {
+            name: 'RỒI TA SẼ NGẮM PHÁO HOA CÙNG NHAU',
+            singer: 'O.lew',
+            path: './assets/songs/RỒI TA SẼ NGẮM PHÁO HOA CÙNG NHAU - MV OFFICIAL - O.lew.mp3',
+            image: './assets/img/ngamphaohoa.jpg'
+        },
+        {
             name: 'Dịu Dàng Em Đến Remix',
             singer: 'Erik',
             path: './assets/songs/Dịu Dàng Em Đến  ERIKCukak Remix.mp3',

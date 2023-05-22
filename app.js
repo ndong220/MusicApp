@@ -22,6 +22,55 @@ const app = {
     isRepeat:false,
     config: JSON.parse(localStorage.getItem('PLAYER_STORAGE_KEY')) || {},
     songs : [
+        
+         {
+            name: 'Tình yêu không thể phá vỡ',
+            singer: 'DICKSON',
+            path: './assets/songs/DICKSON - TÌNH YÊU KHÔNG THỂ PHÁ VỠ ( 永不失联的爱) - Người Yêu Nhỏ Bé Em Đang Lưu Lạc Nơi Đâu.mp3',
+            image: './assets/img/tinhyeukhongthephavo.jpg'
+        },
+        {
+            name: 'Chọn ngày đẹp nhất để biến mất',
+            singer: 'Hạnh Sino',
+            path: './assets/songs/「Lyrics Video」Ngày Đẹp Nhất Để Biến Mất - Hạnh Sino.mp3',
+            image: './assets/img/hanhsino.jpg'
+        },
+        {
+            name: 'Người ta đâu thương em',
+            singer: 'LyLy',
+            path: './assets/songs/NGƯỜI TA ĐÂU THƯƠNG EM - LYLY (Official Music Video).mp3',
+            image: './assets/img/lyly.jpg'
+        },
+        {
+            name: 'Hẹn em ở lần yêu thứ 2',
+            singer: 'Nguyenn x @Dangtuanvu.Original',
+            path: './assets/songs/Hẹn Em Ở Lần Yêu Thứ 2 - Nguyenn x @Dangtuanvu.Original - Official MV - Anh phải làm gì để em....mp3',
+            image: './assets/img/lanyeu2.jpg'
+        },
+        {
+            name: 'Thật ra em chẳng thương anh đến vậy đâu',
+            singer: 'Nguyenn x @Dangtuanvu.Original',
+            path: './assets/songs/Thật Ra Em Chẳng Thương Anh Như Vậy Đâu I Nguyenn x Đặng Tuấn Vũ - Official Lyrics Video.mp3',
+            image: './assets/img/thatrraem.jpg'
+        },
+        {
+            name: 'Mình chia tay đi',
+            singer: 'ERIK',
+            path: './assets/songs/ERIK - MÌNH CHIA TAY ĐI.mp3',
+            image: './assets/img/minhchiataydi.jpg'
+        },
+        {
+            name: 'Thế hệ tan vỡ',
+            singer: 'Kaidinh x Sivan',
+            path: './assets/songs/Kaidinh x Sivan - Thế hệ tan vỡ - Official Lyric Video.mp3',
+            image: './assets/img/thehetanvo.jfif'
+        },
+        {
+            name: 'RỒI TA SẼ NGẮM PHÁO HOA CÙNG NHAU',
+            singer: 'O.lew',
+            path: './assets/songs/RỒI TA SẼ NGẮM PHÁO HOA CÙNG NHAU - MV OFFICIAL - O.lew.mp3',
+            image: './assets/img/ngamphaohoa.jpg'
+        },
         {
             name: 'KHÔNG MUỐN MỘT MÌNH ',
             singer: 'VICKY NHUNG',
@@ -41,28 +90,10 @@ const app = {
             image: './assets/img/emlakedangthuong.jpg'
         },
         {
-            name: 'Thế hệ tan vỡ',
-            singer: 'Kaidinh x Sivan',
-            path: './assets/songs/Kaidinh x Sivan - Thế hệ tan vỡ - Official Lyric Video.mp3',
-            image: './assets/img/thehetanvo.jfif'
-        },
-        {
             name: 'YÊU NHAU XONG RỒI',
             singer: 'KUUN ĐỨC NAM',
             path: './assets/songs/YÊU NHAU XONG RỒI - KUUN ĐỨC NAM - OFFICIAL MUSIC VIDEO - CHẲNG THỂ YÊU THÊM MỘT AI TỪ SAU NGÀY ẤY.mp3',
             image: './assets/img/yeunhauxongroi.jpg'
-        },
-        {
-            name: 'RỒI TA SẼ NGẮM PHÁO HOA CÙNG NHAU',
-            singer: 'O.lew',
-            path: './assets/songs/RỒI TA SẼ NGẮM PHÁO HOA CÙNG NHAU - MV OFFICIAL - O.lew.mp3',
-            image: './assets/img/ngamphaohoa.jpg'
-        },
-        {
-            name: 'Dịu Dàng Em Đến Remix',
-            singer: 'Erik',
-            path: './assets/songs/Dịu Dàng Em Đến  ERIKCukak Remix.mp3',
-            image: './assets/img/diudangngayemden.jpg'
         },
         {
             name: 'I Love You So',
@@ -71,107 +102,12 @@ const app = {
             image: './assets/img/0.jpg'
         },
         {
-            name: 'Build a B*tch',
-            singer: ' Bella Poarch',
-            path: './assets/songs/y2mate.com - Build a Btch  Bella Poarch Lyrics  Vietsub .mp3',
-            image: './assets/img/buildabitch.jpg'
-        },
-        {
-            name: ' Cưới Thôi',
-            singer: 'Masew x Masiu x B Ray x TAP',
-            path: './assets/songs/y2mate.com - Cưới Thôi  Masew x Masiu x B Ray x TAP  Lyrics Audio .mp3',
-            image: './assets/img/cuoithoi.jpg'
-        },
-        {
-            name: 'MONTERO (Call Me By Your Name) ',
-            singer: 'Lil Nas',
-            path: './assets/songs/y2mate.com - Lil Nas X  MONTERO Call Me By Your Name Lyrics.mp3',
-            image: './assets/img/montero.jpg'
-        },
-        {
-            name: ' At My Worst Remix',
-            singer: 'Pink Sweat',
-            path: './assets/songs/y2mate.com - Pink Sweat  At My Worst Remix Lyrics Ft Kehlani.mp3',
-            image: './assets/img/atmyworst.jpg'
-        },
-        {
-            name: 'Tát Nước Đầu Đình',
-            singer: 'Lynk Lee ft Binz',
-            path: './assets/songs/y2mate.com - Tát Nước Đầu Đình  Lynk Lee ftBinz Cowvy Mix.mp3',
-            image: './assets/img/tatnuocdaudinh.jpg'
-        },
-        {
-            name: ' Tâm Sự Tuổi 30',
-            singer: 'Trịnh Thăng Bình',
-            path: './assets/songs/y2mate.com - TÂM SỰ TUỔI 30  TRỊNH THĂNG BÌNH  OST ÔNG NGOẠI TUỔI 30.mp3',
-            image: './assets/img/tamuuoi30.jpg'
-        },
-        {
             name: ' Tell Ur Mom II',
             singer: 'Winno ft Heily',
             path: './assets/songs/y2mate.com - Tell Ur Mom II  Winno ft HeilyCukak Remix Audio Lyrics Video.mp3',
             image: './assets/img/tell.jpg'
         },
-        {
-            name: 'Mẹ',
-            singer: 'Trung Tự',
-            path: './assets/songs/y2mate.com - Trung Tự  Mẹ  Xa Nhà  BFF Remix Lofi Ver    Dự Án Lofi 02 .mp3',
-            image: './assets/img/me.jpg'
-        },
-        {
-            name: 'Vũ hội hoá trang',
-            singer: ' Ngận Mỹ Vị',
-            path: './assets/songs/y2mate.com - Vietsub Vũ hội hoá trang  Ngận Mỹ Vị   假面舞会  很美味.mp3',
-            image: './assets/img/vuhoihoatrang.jpg'
-        },
-        {
-            name: 'Ai Đưa Em Về Remix',
-            singer: 'Tia ft Lê Thiện Hiếu, Cukak ',
-            path: './assets/songs/y2mate.com - Ai Đưa Em Về  Tia ft Lê Thiện HiếuCukak Remix Audio Lyrics Video.mp3',
-            image: './assets/img/aiduaemve.jpg'
-        },
-        {
-            name: 'Tiệc Trà Sao灰澈',
-            singer: '星茶会',
-            path: './assets/songs/y2mate.com - 星茶会  Tiệc Trà Sao灰澈  Nhạc Douyin.mp3',
-            image: './assets/img/tiệctrasao.jpg'
-        },
-        {
-            name: 'Em Là Hoàng Hôn Remix',
-            singer: 'Vang x CLoud 5',
-            path: './assets/songs/y2mate.com - Em Là Hoàng Hôn Frexs Remix  Vang x CLoud 5  Má Của Em Tựa Hồng Cành Thắm Remix.mp3',
-            image: './assets/img/emlahoanghon.jpg'
-        },
-        {
-            name: 'Như Một Người Dưng Remix ',
-            singer: 'Nguyễn Thạc Bảo Ngọc',
-            path: './assets/songs/y2mate.com - Như Một Người Dưng Remix  từng ngày em vẫn bên anh thế nhưng anh vương vấn điều gì Hot TikTok 2021.mp3',
-            image: './assets/img/nhumotnguoidung.jpg'
-        },
-        {
-            name: 'Teen Vọng Cổ Remix TikTok',
-            singer: 'Umie x Teddy x meChill',
-            path: './assets/songs/y2mate.com - Teen Vọng Cổ Remix TikTok Umie x Teddy x meChill.mp3',
-            image: './assets/img/teenvongco.jpg'
-        },
-        {
-            name: 'Không Bằng Remix ',
-            singer: 'Na - RIN Music',
-            path: './assets/songs/y2mate.com - Nói Với Em Một Lời Trước Khi Xa Rời  Không Bằng RIN Music Remix  Na.mp3',
-            image: './assets/img/khongbang.jpg'
-        },
-        {
-            name: 'Mắt Nice Cha Cha Tune ',
-            singer: ' Ssahita ft Duy LionCukak Remix',
-            path: './assets/songs/y2mate.com - Mắt Nice Cha Cha Tune  Ssahita ft Duy LionCukak Remix Audio Lyrics Video.mp3',
-            image: './assets/img/matnai.jpg'
-        },
-        {
-            name: ' Phượng Buồn',
-            singer: 'H2K x Sli Petey',
-            path: './assets/songs/y2mate.com - Phượng Buồn  H2K x Sli Petey by H2K  VN MIXCLOUD.mp3',
-            image: './assets/img/phuongbuon.jpg'
-        },
+    
             ],
     setConfig: function (key, value) {
         this.config[key] = value;

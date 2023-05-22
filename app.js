@@ -23,12 +23,6 @@ const app = {
     config: JSON.parse(localStorage.getItem('PLAYER_STORAGE_KEY')) || {},
     songs : [
         {
-            name: 'Oanh cười=))',
-            singer: 'Kiều Oanh',
-            path: './assets/songs/OanhCuoi.mp3',
-            image: './assets/img//oanh.JPG'
-        },
-        {
             name: 'KHÔNG MUỐN MỘT MÌNH ',
             singer: 'VICKY NHUNG',
             path: './assets/songs/VICKY NHUNG - KHÔNG MUỐN MỘT MÌNH (CHILL VER.) (1).mp3',
